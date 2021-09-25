@@ -1,49 +1,110 @@
 <%- include('parts/header') %>
+<%- include('components/navbar') %>
 
-<header class="header header-contact">
-    <%- include('components/navbar', { logo: 'white' }) %>
+<section class="page-header clearfix" style="background-image: url(/img/backgrounds/page-header-bg.jpg);">
     <div class="container">
-        <h1 class="header__title">
-            <span>Biz bilan</span>
-            <br>
-            <span>aloqa qiling</span>
-        </h1>
-    </div>
-</header>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="page-header__wrapper clearfix">
+                    <div class="page-header__title">
+                        <h2>Bog'lanish</h2>
+                    </div>
+                    <div class="page-header__menu">
+                        <ul class="page-header__menu-list list-unstyled clearfix">
+                            <li class="active">Bog'lanish</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-<main class="main main--contact">
-    <div class="container">
-        <div class="form-wrapper">
-            <form class="form">
-                <div class="form__field">
-                    <label class="label">
-                        <span class="text">Ismingiz</span>
-                        <input class="input" type="text" data-input-fname />
-                    </label>
-                    <label class="label">
-                        <span class="text">Telefon raqamingiz</span>
-                        <input class="input" id="phone" type="tel" data-input-phone />
-                    </label>
-                </div>
-                <label class="label valid after-none">
-                    <span class="text">Izohingizni qoldiring</span>
-                    <textarea class="textarea"></textarea>
-                </label>
-                <div class="submit">
-                    <button class="button button-blue" type="submit" disabled>Jo'natish</button>
-                </div>
-            </form>
         </div>
     </div>
-</main>
+</section>
 
+<section class="contact-details-one">
+    <div class="container">
+        <div class="row">
+            <!--Start Single Contact Details One-->
+            <div class="col-xl-4 col-lg-4">
+                <div class="contact-details-one__single">
+                    <div class="contact-details-one__single-icon">
+                        <span class="icon-chat"></span>
+                    </div>
+                    <div class="contact-details-one__single-text">
+                        <h4><a href="tel:+998993421009">99-342-1009</a></h4>
+                        <p>Qo'ng'iroq qiling</p>
+                    </div>
+                </div>
+            </div>
 
-<div class="toaster toaster--success">
-    <p class="toaster__text">Lorem ipsum dolor </p>
-    <div class="toaster__close">
-        <img src="/img/icons/times.svg" alt="times icon">
+            <div class="col-xl-4 col-lg-4">
+                <div class="contact-details-one__single">
+                    <div class="contact-details-one__single-icon">
+                        <span class="icon-message-1"></span>
+                    </div>
+                    <div class="contact-details-one__single-text">
+                        <h4><a href="mailto:sultonbayevogabek@gmail.com">sultonbayevogabek</a></h4>
+                        <p>Email orqali yozing</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4">
+                <div class="contact-details-one__single">
+                    <div class="contact-details-one__single-icon">
+                        <span class="icon-address"></span>
+                    </div>
+                    <div class="contact-details-one__single-text">
+                        <h4>Toshkent, Yunusobod</h4>
+                        <p>Tashrif buyuring</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+</section>
+
+<section class="contact-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4">
+                <div class="contact-page__left">
+                    <div class="section-title">
+                        <span class="section-title__tagline">Xabar qoldiring</span>
+                        <h2 class="section-title__title"><br>Sizdan kelgan xabarlarga <br>javob berishga tayyormiz</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-8">
+                <div class="contact-page__right">
+                    <form action="assets/inc/sendemail.php" class="comment-one__form contact-form-validated" novalidate="novalidate">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="comment-form__input-box">
+                                    <input type="text" placeholder="Ismingiz" name="name">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="comment-form__input-box">
+                                    <input type="email" placeholder="Telefon raqamingiz" name="phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12">
+                                <div class="comment-form__input-box">
+                                    <textarea name="message" placeholder="Xabar matnini yozing"></textarea>
+                                </div>
+                                <button type="submit" class="thm-btn comment-form__btn">Jo'natish</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <%- include('components/footer') %>
 <%- include('parts/footer') %>

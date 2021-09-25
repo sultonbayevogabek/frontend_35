@@ -1,3 +1,5 @@
 module.exports = async (req, res) => {
-    res.redirect('/courses')
+    res.render('teachers', {
+
+    })
 }
