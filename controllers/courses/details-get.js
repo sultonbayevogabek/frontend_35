@@ -6,6 +6,7 @@ module.exports = async (req, res) => {
     console.log(course)
     res.render('details', {
         title: `Kurs haqida`,
+        courses,
         course
     })
 }

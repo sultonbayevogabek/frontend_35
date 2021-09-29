@@ -8,11 +8,9 @@
                     <div class="footer-widget__column footer-widget__courses">
                         <h3 class="footer-widget__title">Kurslar</h3>
                         <ul class="footer-widget__courses-list list-unstyled">
-                            <li><a href="#">UI/UX Design</a></li>
-                            <li><a href="#">WordPress Development</a></li>
-                            <li><a href="#">Business Strategy</a></li>
-                            <li><a href="#">Software Development</a></li>
-                            <li><a href="#">Business English</a></li>
+                            <% courses.forEach(course => { %>
+                            <li><a href="/courses/<%= course.id %>"><%= course.title %></a></li>
+                            <% }) %>
                         </ul>
                     </div>
                 </div>
