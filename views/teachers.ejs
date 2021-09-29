@@ -24,31 +24,30 @@
 <section class="meet-teachers-one">
     <div class="container">
         <div class="row">
-            <div class="col-xl-4 col-lg-4">
+            <% teachers.forEach(teacher => { %>
+                <div class="col-xl-4 col-lg-4">
                 <div class="meet-teachers-one__single wow fadeInUp animated" data-wow-delay="0ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
                     <div class="meet-teachers-one__single-img">
-                        <img src="https://i.pravatar.cc/205?img=1" alt="">
+                        <img src="<%= teacher.img %>" alt="">
                     </div>
 
                     <div class="meet-teachers-one__single-content">
                         <div class="meet-teachers-one__single-middle-content">
                             <div class="title">
-                                <h4><a href="#">David Cooper</a></h4>
-                                <p>teacher</p>
+                                <h4><%= teacher.name %></h4>
                             </div>
-                            <p class="meet-teachers-one__single-content-text">There are many varia of passages the free ipsum lorem.</p>
                         </div>
 
                         <div class="meet-teachers-one__single-bottom-content">
                             <div class="meet-teachers-one__single-content-courses-box">
                                 <div class="text">
-                                    <p>20 Courses</p>
+                                    <p>Kurslari soni: <%= teacher.count %></p>
                                 </div>
                                 <div class="social-icon">
                                     <ul class="list-unstyled">
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a target="_blank" href="<%= teacher.telegram %>"><i class="fab fa-telegram"></i></a></li>
+                                        <li><a target="_blank" href="<%= teacher.instagram %>"><i class="fab fa-facebook"></i></a></li>
+                                        <li><a target="_blank" href="<%= teacher.facebook %>"><i class="fab fa-instagram"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -56,72 +55,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-xl-4 col-lg-4">
-                <div class="meet-teachers-one__single wow fadeInUp animated" data-wow-delay="100ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 100ms; animation-name: fadeInUp;">
-                    <div class="meet-teachers-one__single-img">
-                        <img src="https://i.pravatar.cc/205?img=2" alt="">
-                    </div>
-
-                    <div class="meet-teachers-one__single-content">
-                        <div class="meet-teachers-one__single-middle-content">
-                            <div class="title">
-                                <h4><a href="#">Sarah Albert</a></h4>
-                                <p>teacher</p>
-                            </div>
-                            <p class="meet-teachers-one__single-content-text">There are many varia of passages the free ipsum lorem.</p>
-                        </div>
-
-                        <div class="meet-teachers-one__single-bottom-content">
-                            <div class="meet-teachers-one__single-content-courses-box">
-                                <div class="text">
-                                    <p>20 Courses</p>
-                                </div>
-                                <div class="social-icon">
-                                    <ul class="list-unstyled">
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-4 col-lg-4">
-                <div class="meet-teachers-one__single wow fadeInUp animated" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
-                    <div class="meet-teachers-one__single-img">
-                        <img src="https://i.pravatar.cc/205?img=3" alt="">
-                    </div>
-
-                    <div class="meet-teachers-one__single-content">
-                        <div class="meet-teachers-one__single-middle-content">
-                            <div class="title">
-                                <h4><a href="#">John Smith</a></h4>
-                                <p>teacher</p>
-                            </div>
-                            <p class="meet-teachers-one__single-content-text">There are many varia of passages the free ipsum lorem.</p>
-                        </div>
-
-                        <div class="meet-teachers-one__single-bottom-content">
-                            <div class="meet-teachers-one__single-content-courses-box">
-                                <div class="text">
-                                    <p>20 Courses</p>
-                                </div>
-                                <div class="social-icon">
-                                    <ul class="list-unstyled">
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <% }) %>
         </div>
     </div>
 </section>

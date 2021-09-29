@@ -1,0 +1,176 @@
+<%- include('parts/header') %>
+<div class="container">
+    <div class="container-fluid pt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-6 text-center">Admin Panel</h1>
+            </div>
+            <div class="col-md-12 mt-5">
+                <h1 class="display-6">Kurslar</h1>
+            </div>
+            <% courses.forEach(course => { %>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img" src="<%= course.small_poster %>" alt="">
+                        <div class="card-body">
+                            <h4><%= course.title %></h4>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-danger" id="<%= course.id %>" data-remove-course>O'chirib tashlash</button>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+            <div class="col-md-12 mt-5">
+                <h1 class="display-6">O'qituvchilar</h1>
+            </div>
+            <% teachers.forEach(teacher => { %>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img" src="<%= teacher.img %>" alt="">
+                        <div class="card-body">
+                            <h4><%= teacher.name %></h4>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-danger" id="<%= teacher.id %>" data-remove-teacher>O'chirib
+                                tashlash
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            <% }) %>
+            <div class="col-md-12 mt-5">
+                <h1 class="display-6">O'qituvchi qo'shish</h1>
+            </div>
+            <form class="pt-3" id="teacher-create">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label class="mb-1" for="img">Rasm</label>
+                        <input class="form-control" id="img" name="img" type="file" required accept=".jpg">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="mb-1" for="name">Ismi</label>
+                        <input class="form-control" id="name" name="name" type="text" required min="3">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="mb-1" for="telegram">Telegram</label>
+                        <input class="form-control" id="telegram" name="telegram" type="url" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="mb-1" for="instagram">Instagram</label>
+                        <input class="form-control" id="instagram" name="instagram" type="url" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="mb-1" for="facebook">Facebook</label>
+                        <input class="form-control" id="facebook" name="facebook" type="url" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="mb-1" for="count">Kurslari soni</label>
+                        <input class="form-control" id="count" name="count" type="number" required>
+                    </div>
+                    <div class="col-md-4" style="padding-top: 36px">
+                        <button class="btn btn-primary w-100">Qo'shish</button>
+                    </div>
+                </div>
+            </form>
+            <div class="col-md-12 mt-5">
+                <h1 class="display-6">Kurs qo'shish</h1>
+            </div>
+            <form class="pt-3" id="course-create">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label class="mb-1" for="big-poster">Katta poster</label>
+                        <input class="form-control" id="big-poster" type="file" required accept=".jpg">
+                    </div>
+                    <div class="col-md-12">
+                        <label class="mb-1" for="small-poster">Kichik poster</label>
+                        <input class="form-control" id="small-poster" type="file" required accept=".jpg">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="mb-1" for="author-img">Muallif rasmi</label>
+                        <select class="form-control" id="author-img">
+                            <% teachers.forEach(teacher => { %>
+                            <option value="<%= teacher.id %>"><%= teacher.name %></option>
+                            <% }) %>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="mb-1" for="author">Muallif ismi</label>
+                        <input class="form-control" id="author" type="text" required min="3">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="mb-1" for="title">Kurs nomi</label>
+                        <input class="form-control" id="title" type="text" required>
+                    </div>
+                    <div class="col-md-12">
+                        <label class="mb-1" for="description">Kurs tavsiflash</label>
+                        <textarea class="form-control" id="description"></textarea>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="mb-1" for="duration">Davomiyligi (10 soat 34 minut)</label>
+                        <input class="form-control" id="duration" type="text" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="mb-1" for="lectures">Darslar soni</label>
+                        <input class="form-control" id="lectures" type="number" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="mb-1" for="students">Talabalar soni</label>
+                        <input class="form-control" id="students" type="number" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="mb-1" for="level">Kurs darajasi</label>
+                        <input class="form-control" id="level" type="text" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="mb-1" for="language">Kurs tili</label>
+                        <input class="form-control" id="language" type="text" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="mb-1" for="new_price">Yangi narxi(so'm)</label>
+                        <input class="form-control" id="new_price" type="number" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="mb-1" for="old_price">Eski narxi(so'm)</label>
+                        <input class="form-control" id="old_price" type="number" required>
+                    </div>
+                    <div class="col-md-12">
+                        <h2 class="display-6 pt-5">Kurs bo'limini qo'shish</h2>
+                    </div>
+                    <div class="col-md-12 course-parts">
+
+                    </div>
+                    <div class="col-md-12 pt-3">
+                        <button class="btn btn-success w-100" type="button" data-add-part>Bo'lim qo'shish</button>
+                    </div>
+                    <div class="col-md-12" style="padding-top: 36px">
+                        <button class="btn btn-primary w-100">Qo'shish</button>
+                    </div>
+                </div>
+            </form>
+            <div class="col-md-12 mt-5">
+                <h1 class="display-6">O'quvchi sonini o'zgartirish</h1>
+            </div>
+            <div class="col-md-12">
+                <form action="/admin/edit-count" method="post">
+                    <div class="row pb-5">
+                        <div class="col-md-6">
+                            <select name="id" class="form-control">
+                                <% courses.forEach(course => { %>
+                                    <option value="<%= course.id %>"><%= course.title %></option>
+                                <% }) %>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <input class="form-control" type="number" name="count">
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-primary">O'zgaritirish</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include('parts/footer') %>

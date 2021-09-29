@@ -22,9 +22,13 @@
   },
   "homepage": "https://github.com/sultonbayevogabek/frontend_35#readme",
   "dependencies": {
+    "cookie-parser": "^1.4.5",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "webpack": "^5.51.1",
