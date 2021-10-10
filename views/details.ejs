@@ -24,12 +24,9 @@
                     <div class="courses-one__single style2 wow fadeInLeft" data-wow-delay="0ms"
                          data-wow-duration="1000ms">
                         <div class="courses-one__single-img">
-                            <img src="<%= course.small_poster %>" alt=""/>
+                            <img src="<%= course.medium_poster %>" alt=""/>
                         </div>
                         <div class="courses-one__single-content">
-                            <div class="courses-one__single-content-overlay-img">
-                                <img src="assets/images/resources/course-details-overlay-img.png" alt=""/>
-                            </div>
                             <h6 class="courses-one__single-content-name"><%= course.author %></h6>
                             <h4 class="courses-one__single-content-title"><%= course.title %></h4>
                             <div class="course-details__content-text1">
@@ -88,7 +85,7 @@
                                     <i class="far fa-folder-open"></i>
                                 </div>
                                 <div class="text">
-                                    <p>Darslar soni:<span><%= course.lectures %></span></p>
+                                    <p>Darslar soni: <span><%= course.lectures %></span></p>
                                 </div>
                             </li>
                             <li class="course-details__sidebar-meta-list-item">
@@ -96,7 +93,7 @@
                                     <i class="far fa-user-circle"></i>
                                 </div>
                                 <div class="text">
-                                    <p>Talabalar soni:<span> <%= course.students %></span></p>
+                                    <p>Talabalar soni: <span> <%= course.students %></span></p>
                                 </div>
                             </li>
                             <li class="course-details__sidebar-meta-list-item">

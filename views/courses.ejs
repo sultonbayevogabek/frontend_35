@@ -40,10 +40,10 @@
                         </div>
                         <h6 class="courses-one__single-content-name"><%= course.author %></h6>
                         <h4 class="courses-one__single-content-title"><a href="/courses/<%= course.id %>"><%= course.title %></a></h4>
-                        <p class="courses-one__single-content-price"><%= course.new_price %> so'm</p>
+                        <p class="courses-one__single-content-price"><%= course.new_price %> so'm <del style="font-size: 10px; color: #b00020"><%= course.old_price %> so'm</del></p>
                         <ul class="courses-one__single-content-courses-info list-unstyled">
                             <li>Darslar: <%= course.lectures %></li>
-                            <li><%= course.duration %> soat</li>
+                            <li><%= course.duration %></li>
                             <li><%= course.level %></li>
                         </ul>
                     </div>

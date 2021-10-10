@@ -4,7 +4,7 @@ const path = require('path')
 const { v4: uuidv4 } = require('uuid')
 
 module.exports = async (req, res) => {
-    const { big_poster, small_poster } = req.files
+    const { big_poster, medium_poster, small_poster } = req.files
     const id = uuidv4()
     let {
         author_img,
@@ -22,11 +22,13 @@ module.exports = async (req, res) => {
     } = req.body
     list = JSON.parse(list)
     await big_poster.mv(path.join(__dirname, '..', '..', 'public', 'img', 'course-posters', id + 'big' + '.jpeg'))
+    await medium_poster.mv(path.join(__dirname, '..', '..', 'public', 'img', 'course-posters', id + 'medium' + '.jpeg'))
     await small_poster.mv(path.join(__dirname, '..', '..', 'public', 'img', 'course-posters', id + 'small' + '.jpeg'))
     const courses = await readFile('courses.json')
     courses.push({
         id,
         big_poster: `/img/course-posters/${id}big.jpeg`,
+        medium_poster: `/img/course-posters/${id}medium.jpeg`,
         small_poster: `/img/course-posters/${id}small.jpeg`,
         author_img: `/img/teachers/${author_img}.jpeg`,
         author,

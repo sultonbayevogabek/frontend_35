@@ -21,6 +21,7 @@
                     </div>
                 </div>
             <% }) %>
+            <hr style="margin-top: 20px">
             <div class="col-md-12 mt-5">
                 <h1 class="display-6">O'qituvchilar</h1>
             </div>
@@ -39,6 +40,7 @@
                     </div>
                 </div>
             <% }) %>
+            <hr style="margin-top: 20px">
             <div class="col-md-12 mt-5">
                 <h1 class="display-6">O'qituvchi qo'shish</h1>
             </div>
@@ -73,17 +75,22 @@
                     </div>
                 </div>
             </form>
+            <hr style="margin-top: 20px">
             <div class="col-md-12 mt-5">
                 <h1 class="display-6">Kurs qo'shish</h1>
             </div>
             <form class="pt-3" id="course-create">
                 <div class="row">
                     <div class="col-md-12">
-                        <label class="mb-1" for="big-poster">Katta poster</label>
+                        <label class="mb-1" for="big-poster">Katta poster (orqa fon rasmi uchun 1895 x 390)</label>
                         <input class="form-control" id="big-poster" type="file" required accept=".jpg">
                     </div>
                     <div class="col-md-12">
-                        <label class="mb-1" for="small-poster">Kichik poster</label>
+                        <label class="mb-1" for="medium-poster">O'rtancha poster (details bo'limi uchun 770 x 420)</label>
+                        <input class="form-control" id="medium-poster" type="file" required accept=".jpg">
+                    </div>
+                    <div class="col-md-12">
+                        <label class="mb-1" for="small-poster">Kichik poster (kurslar bo'limi uchun 270 x 220)</label>
                         <input class="form-control" id="small-poster" type="file" required accept=".jpg">
                     </div>
                     <div class="col-md-4">
@@ -107,7 +114,7 @@
                         <textarea class="form-control" id="description"></textarea>
                     </div>
                     <div class="col-md-3">
-                        <label class="mb-1" for="duration">Davomiyligi (10 soat 34 minut)</label>
+                        <label class="mb-1" for="duration">Davomiyligi</label>
                         <input class="form-control" id="duration" type="text" required>
                     </div>
                     <div class="col-md-3">
@@ -149,6 +156,7 @@
                 </div>
             </form>
             <div class="col-md-12 mt-5">
+                <hr>
                 <h1 class="display-6">O'quvchi sonini o'zgartirish</h1>
             </div>
             <div class="col-md-12">

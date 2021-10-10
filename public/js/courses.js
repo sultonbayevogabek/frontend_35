@@ -1,5 +1,6 @@
 const courseCreateForm = document.querySelector('#course-create'),
     bigPoster = courseCreateForm.querySelector('#big-poster'),
+    mediumPoster = courseCreateForm.querySelector('#medium-poster'),
     smallPoster = courseCreateForm.querySelector('#small-poster'),
     authorImg = courseCreateForm.querySelector('#author-img'),
     authorName = courseCreateForm.querySelector('#author'),
@@ -74,6 +75,7 @@ courseCreateForm.addEventListener('submit', async e => {
     let formData = new FormData()
 
     formData.append('big_poster', bigPoster.files[0])
+    formData.append('medium_poster', mediumPoster.files[0])
     formData.append('small_poster', smallPoster.files[0])
     formData.append('author_img', authorImg.value)
     formData.append('author', authorName.value)
@@ -117,7 +119,10 @@ courseCreateForm.addEventListener('submit', async e => {
     })
 
     response = await response.json()
-    console.log(response)
+
+    if (response.ok) {
+        window.location.reload()
+    }
 })
 
 const courseRemoveBtns = document.querySelectorAll('[data-remove-course]')
