@@ -1,1 +1,199 @@
-[{"id":"1e07d364-097f-46c2-9254-cbef6df547ab","big_poster":"/img/course-posters/1e07d364-097f-46c2-9254-cbef6df547abbig.jpeg","medium_poster":"/img/course-posters/1e07d364-097f-46c2-9254-cbef6df547abmedium.jpeg","small_poster":"/img/course-posters/1e07d364-097f-46c2-9254-cbef6df547absmall.jpeg","author_img":"/img/teachers/af22d379-96cf-4cf2-a61e-559d6d376575.jpeg","author":"Og'abek Sultonbayev","title":"Front End Dasturlash","description":"Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.\n\nIt was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of lorem ipsum amet finibus eros. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.","list":[{"part_title":"HTML","lessons":[{"theme":"HTML asoslari","duration":"2soat 11 minut"}]}],"duration":"10 soat 34 minut","lectures":"35","students":"120","level":"Pro","language":"O'zbek","old_price":"350000","new_price":"299000"}]
+[
+   {
+      "id": "8178a1b5-6245-4a19-9408-7df948bfed0a",
+      "big_poster": "/img/course-posters/8178a1b5-6245-4a19-9408-7df948bfed0abig.jpeg",
+      "medium_poster": "/img/course-posters/8178a1b5-6245-4a19-9408-7df948bfed0amedium.jpeg",
+      "small_poster": "/img/course-posters/8178a1b5-6245-4a19-9408-7df948bfed0asmall.jpeg",
+      "author_img": "/img/teachers/af22d379-96cf-4cf2-a61e-559d6d376575.jpeg",
+      "author": "Og'abek Sultonbayev",
+      "title": "Intensiv Front End kursi",
+      "description": "Ushbu kurs Front End dasturlash sohasida trendda hisoblangan mashhur texnologiyalarni o'rgatuvchi darslarni o'zida jamlagan. \nKurs har birining davomiyligi 2 soat bo'lgan, jami 35 ta videoni o'z ichiga oladi.\nKursda HTML, CSS, Sass, Bootstrap, JavaScript, Git va React texnologiyalarini mukammal o'rganishingiz mumkin. Kurs videolari \nZoom orqali onlayn o'tilgan darslardan yozib olingan videolar hisoblanadi. Dars davomida o'quvchilar bilan bo'lgan muloqot ham\nvideolarda yozilgan. Videoni ko'rish davomida sizda tug'ilishi mumkin bo'lgan savollarni darsda qatnashgan o'quvchilar berishgan bo'ladi.\nDars videosini ko'rib bo'lgach, o'rgangan narsalaringizni mustahkamlashingiz uchun har bir darsga mo'ljallangan uyga vazifa bor. Agar videoni ko'rish\nmobaynida sizda qandaydir savol tug'ilsa o'qituvchiga telegram orqali savollaringizni berishingiz mumkin. Kursni to'liq tugatganingizdan keyin o'z \nportfoliongizga 10 ta loyihani yig'ib qo'yasiz. Ishga kirishda shu portfolio sizga asqotadi. Kursni tugatgach sizda haqiqiy loyihalarda ishlash ko'nikmasi\nshakllangan bo'ladi.",
+      "list": [
+         {
+            "part_title": "HTML",
+            "lessons": [
+               {
+                  "theme": "Kirish. Front End dasturlash nima? HTML asoslari. HTML da ishlatiladigan asosiy teglar.",
+                  "duration": "1 soat 50 minut"
+               },
+               {
+                  "theme": "HTML asoslari. HTML da ishlatiladigan asosiy teglar.",
+                  "duration": "1 soat 53 minut"
+               }
+            ]
+         },
+         {
+            "part_title": "CSS",
+            "lessons": [
+               {
+                  "theme": "CSS asoslari. Matn va fon ranglari bilan ishlash. Elementning eni va bo'yini belgilash. Shrift parametrlari bilan ishlash. CSS selectorlar yozish usullari. Uyga vazifasi: ",
+                  "duration": "1 soat 57 minut"
+               },
+               {
+                  "theme": " CSS asoslari. Border, padding, margin, box-sizing xususiyatlari. Display xususiyati yordamida elementlarni yonma-yon joylashtirish.",
+                  "duration": "1 soat 57 minut"
+               },
+               {
+                  "theme": "Jadval elementiga stil berish. meta tegining vazifasi. Shrift oilasi.",
+                  "duration": "1 soat 53 minut"
+               },
+               {
+                  "theme": "WebStorm 2020.1 ni o'rnatish va litsenziya muddatini uzaytirish.",
+                  "duration": "10 minut"
+               },
+               {
+                  "theme": "Web Storm 2020.1 dasturlash  muhiti bilan tanishish. Display xususiyati. Block, inline va inline-block farqlari.",
+                  "duration": "2 soat 6 minut"
+               },
+               {
+                  "theme": "Elementlarni yonma-yon joylash. Outline xususiyati. Matn bilan ishlashda direction, white-spacing, letter-spacing, vertical-align xususiyatlari",
+                  "duration": "2 soat 13 minut"
+               },
+               {
+                  "theme": "Overflow xususiyati. Float yordamida elementlarni yonma-yon joylashtirish. Float yordamida elementlarni yonma-yon joylashtirishda kelib chiqadigan xatolikni qo'lbola usulda tuzatish.",
+                  "duration": "1 soat 43 minut"
+               },
+               {
+                  "theme": "Hover effecti. Shaffoflik xususiyati. em va rem o'lchov birliklari. Matn va elementlarga soya berish. Orqa fonga rasm joylashtirish.",
+                  "duration": "2 soat 7 minut"
+               },
+               {
+                  "theme": "Form elementlari. Qilingan ishni bepul hostingga yuklash.",
+                  "duration": "2 soat 9 minut"
+               },
+               {
+                  "theme": "reset.css va normalize.css bilan tanishish. CSS stillarni prefikslash. Floatning ishkalini to'g'irlash. Pseudo elementlar: after va before. Position static, absolute, relative",
+                  "duration": "1 soat 59 minut"
+               },
+               {
+                  "theme": "CSS transform. Position fixed va sticky.",
+                  "duration": "2 soat 8 minut"
+               },
+               {
+                  "theme": "HTML5 teglari bilan tanishish. Moslashuvchanlik (responsivlik).",
+                  "duration": "2 soat 1 minut"
+               },
+               {
+                  "theme": "iframe tegi orqali saytga Google Map yoki YouTube videosini joylashtirish. Sahifaga audio va video fayllarni joylashtirish. CSS selectorlari.",
+                  "duration": "2 soat 9 minut"
+               },
+               {
+                  "theme": "CSS selectorlar. CSS filter xususiyati. Gradient. usemap yordamida rasm sohasiga havola joylash.",
+                  "duration": "2 soat 12 minut"
+               },
+               {
+                  "theme": "Photoshopni o'rnatish va undan foydalanish.",
+                  "duration": "21 minut"
+               },
+               {
+                  "theme": "Flexbox. Flexbox yordamida elementlarni joylashtirish.",
+                  "duration": "1 soat 29 minut"
+               },
+               {
+                  "theme": "flex-grow va flex-shrink xususiyatlari. Font awesome iconlari. PSD shablondan verstka qilish.",
+                  "duration": "2 soat 4 minut"
+               }
+            ]
+         },
+         {
+            "part_title": "Sass",
+            "lessons": [
+               {
+                  "theme": "Sass texnologiyasi. Sassni o'rnatib olish. Sassda o'zgaruvchilar. Tanlovchilarni yozishda Sassning beradigan qulayligi. Boshqa fayllarni import qilib ishlash. Lifestyle nomli PSD maketni Sass yordamida verstka qilish.",
+                  "duration": "2 soat 12 minut"
+               },
+               {
+                  "theme": "Codepen platformasiga ekskursiya qilish. Sassda mixin, konkatinatsiya, adjust_hue, darken, lighten, for sikli. Sass yordamida Bootstrapnikiga o'xshash grid yasash. media query yozishda mixinlardan foydalanish.",
+                  "duration": "2 soat 1 minut"
+               },
+               {
+                  "theme": "Sassda @extend funksiyasi, shart operatori, @error funksiyasi. Mixin yordamida uchburchak yasash. @each sikli. Sass yordamida Lambda PSD maketidan verstka qilish. Loyihaga font ulash.",
+                  "duration": "2 soat 10 minut"
+               }
+            ]
+         },
+         {
+            "part_title": "Bootstrap",
+            "lessons": [
+               {
+                  "theme": "Bootstrap frameworki. Bootstrap yordamida Travel PSD maketini verstka qilish.",
+                  "duration": "2 soat 14 minut"
+               },
+               {
+                  "theme": "Bootstrap frameworki. Bootstrap yordamida TwoBytes PSD maketini verstka qilish.",
+                  "duration": "1 soat 59 minut"
+               },
+               {
+                  "theme": " TravelCream PSD maketini Bootstrap yordamida verstka qilish.",
+                  "duration": "2 soat 26 minut"
+               },
+               {
+                  "theme": "TravelCream PSD maketini Bootstrap yordamida verstka qilish.",
+                  "duration": "1 soat 54 minut"
+               }
+            ]
+         },
+         {
+            "part_title": "JavaScript",
+            "lessons": [
+               {
+                  "theme": " JavaScript asoslari. Chiqarish operatorlari. O'zgaruvchi va o'zgarmaslar. Ma'lumot turlari. Prompt va confirm. String metodlari.",
+                  "duration": "2 soat 6 minut"
+               },
+               {
+                  "theme": "String metodlari. Takrorlanish operatorlari(looplar). Shart operatorlari. Ternar operatori. Switch case. Array (massivlar). Array metodlari. Obyektlar bilan ishlash.",
+                  "duration": "1 soat 42 minut"
+               },
+               {
+                  "theme": "Funksiya. DOM events. Real API(daryo.uz) ustida amallar bajarish.",
+                  "duration": "1 soat 39 minut"
+               },
+               {
+                  "theme": "JS DOM(Document Object Model).",
+                  "duration": "1 soat 56 minut"
+               },
+               {
+                  "theme": "O'tilgan mavzularga asosida ToDo App qilish. JSON data yordamida kinolar saytini qilish. Slider qilish. Obyektlarni destruktsiya qilish. Spread operatori. SetTimeOut va SetInterval funksiyalari. Date bilan ishlash. ",
+                  "duration": "2 soat 12 minut"
+               },
+               {
+                  "theme": "O'tilganlar bo'yicha amaliy mashq qilish. DOM da screen bilan ishlash. Modal oyna yasash.",
+                  "duration": "1 soat 52 minut"
+               }
+            ]
+         },
+         {
+            "part_title": "React",
+            "lessons": [
+               {
+                  "theme": "React kutubxonasi. React App yaratish. React strukturasi bilan tanishish. JSX sintaksisi. Komponent tushunachasi. Cuda PSD maketini Reactda verstka qilish.",
+                  "duration": "1 soat 20 minut"
+               },
+               {
+                  "theme": "React kutubxonasi. Props. Reactda Boostrapdan foydalanish. ReactBootstrap. React Router",
+                  "duration": "1 soat 2 minut"
+               },
+               {
+                  "theme": "Reactda Shoppy PSD maketini verstka qilish.",
+                  "duration": "2 soat 21 minut"
+               },
+               {
+                  "theme": "Reactda Shoppy PSD maketini verstka qilish.",
+                  "duration": "2 soat 9 minut"
+               },
+               {
+                  "theme": "Loyihani build qilish. Bepul servisga loyihani deploy qilish.",
+                  "duration": "1 soat 7 minut"
+               }
+            ]
+         }
+      ],
+      "duration": "69 soat",
+      "lectures": "35",
+      "students": "31",
+      "level": "Pro",
+      "language": "O'zbek",
+      "old_price": "350000",
+      "new_price": "299000"
+   }
+]

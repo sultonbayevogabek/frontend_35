@@ -6849,7 +6849,7 @@ ul {
 .course-details__curriculum-list li {
    position: relative;
    display: flex;
-   align-items: center;
+   align-items: flex-start;
    justify-content: space-between;
    flex-wrap: wrap;
    border-bottom: 1px solid #e0e2e9;
@@ -6864,18 +6864,21 @@ ul {
 .course-details__curriculum-list-left {
    position: relative;
    display: flex;
-   align-items: center;
+   align-items: flex-start;
+   width: 80%;
 }
 
 .course-details__curriculum-list-left-icon {
    position: relative;
    display: inline-block;
+   flex-shrink: 0;
    width: 30px;
    height: 30px;
    border-radius: 50%;
    background: var(--thm-base);
    text-align: center;
    line-height: 30px;
+   margin-bottom: 10px;
    margin-right: 20px;
 }
 
